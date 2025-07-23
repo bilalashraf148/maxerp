@@ -1,0 +1,48 @@
+
+
+.form-scroll-area {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-bottom: 16px;
+  scrollbar-width: thin;              
+  scrollbar-color: #d1d5db #f5f5f5;   
+}
+
+/* Chrome, Edge, Safari */
+.form-scroll-area::-webkit-scrollbar {
+  width: 8px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+.form-scroll-area::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.form-scroll-area::-webkit-scrollbar-thumb:hover {
+  background: #b0b8c1;
+}
+.form-scroll-area::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+
+.sticky-footer {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  z-index: 2;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
