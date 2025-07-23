@@ -1,12 +1,6 @@
 let jobPosts = [];
 
-function validateJobPost(data) {
-  const { title, department, employmentType, description, location, deadline } = data;
-  if (!title || !department || !employmentType || !description || !location || !deadline) {
-    return false;
-  }
-  return true;
-}
+const { validateJobPost } = require('../models/jobValidation');
 
 const createJob = (req, res) => {
   if (!validateJobPost(req.body)) {

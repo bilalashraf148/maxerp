@@ -39,7 +39,35 @@ git clone https://github.com/your-username/maxerp-recruitment.git
 cd maxerp-recruitment
 ```
 
-### 2. Install dependencies
+### 2. Environment Variables Setup
+
+Both the frontend and backend require environment variables. Example files are provided for convenience.
+
+- **Backend:**
+  1. Copy `.env.example` to `.env`:
+     ```bash
+     cd backend
+     cp .env.example .env
+     ```
+  2. Edit `.env` if needed (defaults should work for local dev):
+     ```env
+     PORT=4000
+     API_URL=http://localhost:4000
+     FRONTEND_URL=http://localhost:5173
+     ```
+
+- **Frontend:**
+  1. Copy `.env.example` to `.env`:
+     ```bash
+     cd ../frontend
+     cp .env.example .env
+     ```
+  2. Edit `.env` if needed:
+     ```env
+     VITE_API_URL=http://localhost:4000
+     ```
+
+### 3. Install dependencies
 
 - **Frontend:**
   ```bash
